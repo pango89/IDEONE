@@ -22,25 +22,25 @@ void iterativePostorder(node *root)
     if (root == NULL)
        return;
     stack<node *> nodeStack1;
-	stack<node *> nodeStack2;
+    stack<node *> nodeStack2;
     nodeStack1.push(root);
-	struct node *node=NULL;    
+    struct node *node=NULL;    
     while (nodeStack1.empty() == false)
     {
         node = nodeStack1.top();
         nodeStack1.pop();
-		nodeStack2.push(node);
-		if (node->left)
+	nodeStack2.push(node);
+	if (node->left)
             nodeStack1.push(node->left);
         if (node->right)
             nodeStack1.push(node->right);
     }
-	while (nodeStack2.empty() == false)
+    while (nodeStack2.empty() == false)
     {
-		node = nodeStack2.top();
+	node = nodeStack2.top();
         nodeStack2.pop();
-		printf("%d ",node->data);
-	}
+	printf("%d ",node->data);
+    }
 }
 int main()
 {
