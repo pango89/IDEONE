@@ -58,6 +58,7 @@ void mirror(struct node* node)
     temp        = node->left;
     node->left  = node->right;
     node->right = temp;
+    //HERE WE HAVE USED POST ORDER BUT WE CAN ALSO USE PRE ORDER
   }
 }
  
