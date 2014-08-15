@@ -1,0 +1,45 @@
+/*PROGRAM FOR FIBONACCI NUMBERS
+THE FIBONACCI NUMBERS ARE THE NUMBERS IN THE FOLLOWING INTEGER SEQUENCE.
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 141, ……..
+IN MATHEMATICAL TERMS, THE SEQUENCE FN OF FIBONACCI NUMBERS IS DEFINED BY THE RECURRENCE RELATION
+F_N = F_{N-1} + F_{N-2}
+WITH SEED VALUES
+F_0 = 0 AND F_1 = 1.
+
+WRITE A FUNCTION INT FIB(INT N) THAT RETURNS F_N. FOR EXAMPLE, IF N = 0, THEN FIB() SHOULD RETURN 0. IF N = 1, THEN IT SHOULD RETURN 1. FOR N > 1, IT SHOULD RETURN F_{N-1} + F_{N-2}
+
+METHOD 1 ( USE RECURSION )
+A SIMPLE METHOD THAT IS A DIRECT RECURSIVE IMPLEMENTATION MATHEMATICAL RECURRENCE RELATION GIVEN ABOVE.*/
+
+#include<stdio.h>
+int fib(int n)
+{
+   if (n <= 1)
+      return n;
+   return fib(n-1) + fib(n-2);
+}
+ 
+int main ()
+{
+  int n = 9;
+  printf("%d", fib(n));
+  getchar();
+  return 0;
+}
+/*
+TIME COMPLEXITY: T(N) = T(N-1) + T(N-2) WHICH IS EXPONENTIAL.
+WE CAN OBSERVE THAT THIS IMPLEMENTATION DOES A LOT OF REPEATED WORK (SEE THE FOLLOWING RECURSION TREE). 
+SO THIS IS A BAD IMPLEMENTATION FOR NTH FIBONACCI NUMBER.
+
+                         FIB(5)   
+                     /             \     
+               FIB(4)                FIB(3)   
+             /      \                /     \
+         FIB(3)      FIB(2)         FIB(2)    FIB(1)
+        /     \        /    \       /    \  
+  FIB(2)   FIB(1)  FIB(1) FIB(0) FIB(1) FIB(0)
+  /    \
+FIB(1) FIB(0)
+
+EXTRA SPACE: O(N) IF WE CONSIDER THE FUINCTION CALL STACK SIZE, OTHERWISE O(1).
+*/
