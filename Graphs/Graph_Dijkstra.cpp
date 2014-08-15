@@ -87,11 +87,17 @@ void shortestPathDijkstra(graph* g,int s)
 	fromNode.resize(g->V);
 	for(int i=0;i<g->V;i++)
 		fromNode[i]=-1;
+<<<<<<< HEAD
 		
 	priority_queue<graphNode, vector< graphNode >, CompareWeight > pq1;
 	graphNode s1={s,0};
 	pq1.push(s1);
 	
+=======
+	priority_queue<graphNode, vector< graphNode >, CompareWeight > pq1;
+	graphNode s1={s,0};
+	pq1.push(s1);
+>>>>>>> origin/master
 	while(!pq1.empty())
 	{
 		graphNode ele=pq1.top();

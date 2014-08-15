@@ -34,9 +34,13 @@ there may be more than one solutions, this function prints one of the feasible
 solutions.*/
 bool solveMaze(int maze[N][N])
 {
+<<<<<<< HEAD
     int sol[N][N] = 
 	{ 
 	    {0, 0, 0, 0},
+=======
+    int sol[N][N] = { {0, 0, 0, 0},
+>>>>>>> origin/master
         {0, 0, 0, 0},
         {0, 0, 0, 0},
         {0, 0, 0, 0}
@@ -89,9 +93,13 @@ bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N])
 // driver program to test above function
 int main()
 {
+<<<<<<< HEAD
     int maze[N][N]  =  
 	{   
 	    {1, 0, 0, 0},
+=======
+    int maze[N][N]  =  { {1, 0, 0, 0},
+>>>>>>> origin/master
         {1, 1, 0, 1},
         {0, 1, 0, 0},
         {1, 1, 1, 1}

@@ -88,7 +88,11 @@ int solveKTUtil(int x, int y, int movei, int sol[N][N], int xMove[N],
 int main()
 {
     solveKT();
+<<<<<<< HEAD
     //getchar();
+=======
+    getchar();
+>>>>>>> origin/master
     return 0;
 }
 /*

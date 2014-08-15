@@ -84,9 +84,13 @@ NOTE THAT THERE MAY BE MORE THAN ONE SOLUTIONS, THIS FUNCTION PRINTS ONE OF THE
 FEASIBLE SOLUTIONS.*/
 bool solveNQ()
 {
+<<<<<<< HEAD
     int board[N][N] = 
 	{ 
 	    {0, 0, 0, 0},
+=======
+    int board[N][N] = { {0, 0, 0, 0},
+>>>>>>> origin/master
         {0, 0, 0, 0},
         {0, 0, 0, 0},
         {0, 0, 0, 0}

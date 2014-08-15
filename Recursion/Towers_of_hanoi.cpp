@@ -3,9 +3,13 @@ using namespace std;
 void moveDisk(int,char,char,char);
 int main()
 {
+<<<<<<< HEAD
 	int num=0;//Take user input
 	scanf("%d",&num);
 	moveDisk(num,'S','D','A');
+=======
+	moveDisk(4,'S','D','A');
+>>>>>>> origin/master
 	return 0;
 }
 // ASSUMING N-TH DISK IS BOTTOM DISK (COUNT DOWN)

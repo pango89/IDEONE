@@ -23,7 +23,11 @@ void reverse(char str[])
 // Driver program to test above functions
 int main()
 {
+<<<<<<< HEAD
     char str[] = "Hello there! I am using Whatsapp!";
+=======
+    char str[] = "abc";
+>>>>>>> origin/master
  
     reverse(str);
     printf("Reversed string is %s", str);
